@@ -15,7 +15,7 @@ public func configure(_ app: Application) throws {
     
     // MARK: - Telegram
     
-    let tgApi: String = "1900421527:AAFBdi3x4M1y1WGFfqSuBbf_k5iNsqMPmhI"
+    let tgApi: String = ""
     let connection: TGConnectionPrtcl = TGLongPollingConnection()
     TGBot.configure(connection: connection, botId: tgApi, vaporClient: app.client)
     try TGBot.shared.start()
